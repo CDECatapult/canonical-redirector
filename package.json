@@ -1,0 +1,56 @@
+{
+  "name": "@digicat/canonical-redirector",
+  "version": "0.0.0",
+  "description": "Redirects HTTP traffic to a configured canonical HTTPS host",
+  "main": "server.js",
+  "files": [
+    "server.js"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "coverage": "nyc npm test",
+    "lint": "as-i-preach",
+    "posttest": "as-i-preach",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CDECatapult/canonical-redirector.git"
+  },
+  "author": "Digital Catapult (https://www.digitalcatapultcentre.org.uk/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CDECatapult/canonical-redirector/issues"
+  },
+  "homepage": "https://github.com/CDECatapult/canonical-redirector#readme",
+  "keywords": [
+    "alb",
+    "canonical",
+    "http",
+    "https",
+    "redirect",
+    "server"
+  ],
+  "dependencies": {
+    "envalid": "^4.0.2"
+  },
+  "devDependencies": {
+    "@novemberborn/as-i-preach": "^10.1.0",
+    "ava": "^0.22.0",
+    "codecov": "^2.3.1",
+    "lolex": "^2.1.2",
+    "nyc": "^11.2.1",
+    "require-uncached": "^1.0.3",
+    "testdouble": "^3.2.5"
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ]
+  },
+  "standard-engine": "@novemberborn/as-i-preach"
+}
